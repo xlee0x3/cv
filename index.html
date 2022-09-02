@@ -7,100 +7,116 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="keywords" content="kirill, cv, resume">
 	<meta name="description" content="Этот сайт = резюме Кирилла Судакова">
+	<link rel="stylesheet" href="styles.css">
 	<title>Kirill CV</title>
 </head>
 
 <body>
+	<div class="conteiner">
 
-	<img src="foto.jpg" width="250">
+		<div class="info">
+			<img src="foto.jpg" class="avatar">
 
-	<h1> Кирилл Судаков</h1>
+			<div class="text">
+				<h1> Кирилл Судаков</h1>
 
-	<p>Я начинаю с <strong>нуля</strong> изучать front-end разработку.
+				<p class="bio">Я начинаю с <strong>нуля</strong> изучать front-end разработку.
 
-		<br>
+					<br>
 
-		<em>Помотрим сколько на это уйдет времени</em>
-	</p>
+					<em>Помотрим сколько на это уйдет времени</em>
+				</p>
 
-	<br>
+				<p class="bio"><strong><em>До этого никакого опыта в IT не было</em></strong></p>
+			</div>
 
-	<p><strong><em>До этого никакого опыта в IT не было</em></strong></p>
-	<br>
-	<hr>
-	<h2>Мои соц.сети:</h2>
-	<p>
-		<a href="https://www.instagram.com/pp.yppi/" target="_blank">Instagram</a>
-	</p>
-
-	<p>
-		<a href="https://www.facebook.com/kirill.sudakov.547" target="_blank">Facebook</a>
-	</p>
-
-	<p>
-		<a href="https://t.me/pp_yppi" target="_blank">Telegram</a>
-	</p>
-
-	<hr>
-	<h2>Мои увлечения:</h2>
-	<ul>
-		<li>Автомобили</li>
-		<li>Путешествие</li>
-		<li>Рыблака</li>
-		<li>Собаки</li>
-		<li>Сноуборд</li>
-	</ul>
-	<hr>
-	<h2>Опыт работы</h2>
-	<table>
-		<thead>
-			<tr>
-				<th>Название</th>
-				<th>Должность</th>
-				<th>Год</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>Rocket</td>
-				<td>Мото-курьер</td>
-				<td>2019-2020</td>
-			</tr>
-			<tr>
-				<td>Glovo</td>
-				<td>Авто-курьер</td>
-				<td>2020-2021</td>
-			</tr>
-			<tr>
-				<td>Uklon</td>
-				<td>Отдел заботы</td>
-				<td>2021-2022</td>
-			</tr>
-		</tbody>
-	</table>
-	<hr>
-
-	<h2>Связаться со мной</h2>
-
-	<form>
-		<div>
-			<label for="name">Имя</label>
-			<input type="text" id="name" placeholder="Введите имя">
 		</div>
 
-		<div>
-			<label for="email">Email</label>
-			<input type="email" id="email" placeholder="Введите email">
+		<div class="social">
+			<h2>Мои соц.сети:</h2>
+			<a href="https://www.instagram.com/pp.yppi/" target="_blank">Instagram</a> <strong>|</strong>
+			<a href="https://www.facebook.com/kirill.sudakov.547" target="_blank">Facebook</a>
+			<strong>|</strong>
+			<a href="https://t.me/pp_yppi" target="_blank">Telegram</a>
 		</div>
 
-		<div>
-			<label for="message">Сообщение</label>
-			<br>
-			<textarea id="message" cols="15" rows="10" placeholder="Введите текст"></textarea>
+
+
+
+
+		<div class="hobby">
+			<h2>Мои увлечения:</h2>
+			<ol class="list">
+				<li>Автомобили</li>
+				<li>Путешествие</li>
+				<li>Рыблака</li>
+				<li>Собаки</li>
+				<li>Сноуборд</li>
+			</ol>
 		</div>
 
-		<button>Отправить</button>
-	</form>
+
+		<h2>Опыт работы</h2>
+		<table class="work">
+			<thead>
+				<tr>
+					<th>Название</th>
+					<th>Должность</th>
+					<th>Год</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Rocket</td>
+					<td>Мото-курьер</td>
+					<td>2019-2020</td>
+				</tr>
+				<tr>
+					<td>Glovo</td>
+					<td>Авто-курьер</td>
+					<td>2020-2021</td>
+				</tr>
+				<tr>
+					<td>Uklon</td>
+					<td>Отдел заботы</td>
+					<td>2021-2022</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<hr>
+
+
+
+		<form action="/" class="form">
+			<h2>Связаться со мной</h2>
+
+
+			<div class="form-row">
+				<div class="form-group">
+					<label for="name">Имя</label>
+					<input type="text" id="name" placeholder="Введите имя">
+				</div>
+
+				<div class="form-group">
+					<label for="email">Email</label>
+					<input type="email" id="email" placeholder="Введите email">
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="message">Сообщение</label>
+				<textarea id="message" cols="15" rows="10" placeholder="Введите текст"></textarea>
+			</div>
+
+			<button class="btn">Отправить</button>
+		</form>
+	</div>
+
+	<!-- <div class="test">
+		<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium velit sed voluptas eaque dignissimos
+			esse alias iure saepe, distinctio reprehenderit!</p>
+	</div> -->
 </body>
 
 </html>

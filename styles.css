@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+
+
+
+
+
+
+
+
+.conteiner {
+	max-width: 750px;
+	margin: auto;
+	padding-top: 30px;
+}
+
+
+.avatar {
+	width: 300px;
+	border-radius: 28px;
+	box-shadow: 4px 4px 14px rgba(0, 0, 0, .25);
+}
+
+body {
+	font-family: 'Nanum Gothic', sans-serif;
+	background-color: rgb(231, 229, 229);
+	color: #114c67;
+	font-size: 15px;
+}
+
+.text {
+	font-style: italic;
+	font-weight: bold;
+	margin: 0px;
+}
+
+.info {
+	margin-bottom: 15px;
+	display: flex;
+}
+
+.text {
+	margin-left: 40px;
+}
+
+.social a {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+/* рамка! */
+li {
+	background-color: rgb(238, 238, 157);
+	font-weight: bold;
+	border: 1.3px solid black;
+	border-radius: 3px;
+	width: 100px;
+	margin-bottom: 4px;
+	padding: 3px;
+}
+
+table {
+	background-color: rgb(238, 238, 157);
+	font-style: oblique;
+	border: 1.3px solid rgb(231, 229, 229);
+	border-radius: 10px;
+	margin-bottom: 20px;
+	width: 300px;
+	padding: 2px;
+}
+
+.btn {
+	background: #ed7138;
+	padding: 15px 35px;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	font-family: inherit;
+	cursor: pointer;
+}
+
+.btn:hover {
+	opacity: 0.8;
+	color: black
+}
+
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	color: #ed7138;
+	/* front-size: 20px; */
+	text-decoration: underline;
+}
+
+.list {
+	padding: 0 20px;
+}
+
+.list li {
+	margin-bottom: 8px;
+}
+
+.work {
+	padding: 0px;
+}
+
+.work td {
+	margin-bottom: 10px;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 8px;
+}
+
+.work td:nth-child(3) {
+	color: black;
+}
+
+.form h2 {
+	text-align: center;
+}
+
+.form-row {
+	margin-bottom: 10px;
+	display: flex;
+}
+
+
+.form-row .form-group:last-child {
+	margin-right: 0;
+}
+
+.form-row .form-group {
+	/* display: inline-block; */
+	margin-right: 20px;
+	width: 50%;
+	/* width: 46%; */
+}
+
+.form-group label {
+	display: block;
+	font-size: 14px;
+}
+
+
+
+.form-group input,
+.form-group textarea {
+	width: 100%;
+	box-sizing: border-box;
+	border: none;
+	background: transparent;
+	border-bottom: 1px solid #ccc;
+	color: #000;
+	padding: 15px 0 10px;
+	outline: none;
+	font-family: inherit;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 650px) {
+	.info {
+		display: block;
+		text-align: center;
+	}
+}
+
+
+@media (max-width:600px) {
+	.form-row {
+		display: block;
+	}
+
+	.form-row .form-group {
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
+}
